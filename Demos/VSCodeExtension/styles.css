@@ -1,0 +1,17 @@
+/* This is a CSS comment */
+/* ? This is a question CSS comment */
+/* ! This is an alert CSS comment */
+/* TODO This is a to do comment */
+/* * This is another regular CSS comment */
+
+body{
+    background-color: lightpink;
+}
+h1{
+    color: rgb(253, 150, 167);
+    background-color: white;
+    padding: 1rem;
+}
+ul{
+    font-family: 'Courier New', Courier, monospace;
+}
