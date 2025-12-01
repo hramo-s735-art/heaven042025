@@ -82,7 +82,15 @@ nav {
   text-align: center;
   min-height: auto;
 }
-
+#aifooter {
+  background-color: rgb(109, 250, 255);
+  padding: 1rem;
+  min-height: auto;
+}
+#aifooter.container {
+  text-align: center;
+  min-height: auto;
+}
 #subfooter {
   background-color: #90f8fc;
   min-height: 10rem;
