@@ -20,21 +20,30 @@ body {
   padding: 1rem;
   color: #75daf4;
 }
-nav {
-  text-align: center;
-}
-
-#logo {
-  width: 6.25rem;
-  height: 6.25rem;
-  background-color: none;
-  background-image: url(Images/logosmall.png);
-}
-
 #pageheader .container {
   background-color: none;
   min-height: auto;
   text-align: center;
+}
+
+#pageheader nav {
+  text-align: center;
+}
+#pageheader nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#pageheader nav ul li {
+  border: 2px solid black;
+  padding: 1rem;
+  background-color: #4eb1fd;
+  margin: 2px;
+  border-radius: 10px;
+}
+#pageheader nav ul li:hover {
+  background-color: rgb(109, 233, 255);
 }
 
 #media {
@@ -44,6 +53,13 @@ nav {
   background-image: url(Images/hero.png);
   background-size: cover;
   aspect-ratio: 16 / 9;
+}
+
+#logo {
+  width: 6.25rem;
+  height: 6.25rem;
+  background-color: none;
+  background-image: url(Images/logosmall.png);
 }
 
 #career {
@@ -121,4 +137,28 @@ blockquote + span {
   margin: 0 auto;
   text-align: right;
   font-size: 1.25rem;
+}
+
+@media screen and (min-width: 650px) {
+  #pageheader nav ul {
+    background-color: rgb(255, 255, 255);
+    margin-top: 2rem;
+  }
+  #pageheader nav ul li {
+    display: inline-block;
+  }
+  #pagecontent {
+    background-color: red;
+  }
+  #career {
+    background-color: blue;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #pagecontent {
+    background-color: rgb(15, 99, 255);
+  }
+  #career {
+    background-color: rgb(98, 0, 255);
+  }
 }
