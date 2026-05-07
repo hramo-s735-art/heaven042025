@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fixed Menu</title>
+    <style>
+      /* Mobile First CSS */
+      html {
+        /* Temporary - Delete */
+        height: 200%;
+      }
+
+      body {
+        font-family:
+          "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        background-color: rgb(87, 174, 125);
+        margin: 0;
+      }
+      #pageheader {
+        background-color: rgb(102, 196, 165);
+        padding: 1rem;
+        /* Default */
+        position: static;
+      }
+      #logo {
+        height: 100px;
+        width: 100px;
+        margin: auto;
+        display: block;
+      }
+      #fblogoheader {
+        background-color: rgb(127, 228, 207);
+      }
+      #pageheader h1 {
+        text-align: center;
+        color: white;
+        /* Remove */
+        background-color: rgb(0, 128, 83);
+      }
+      #pageheader nav {
+        background-color: rgb(94, 255, 212);
+        padding: 0.5rem;
+      }
+      #pageheader ul {
+        padding: 0.5rem;
+        list-style-type: none;
+        background-color: rgb(255, 255, 255);
+        /* Flexbox component */
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      #pageheader li {
+        text-align: center;
+        border: 1px solid white;
+        padding: 0.5rem;
+        background-color: rgb(57, 156, 108);
+      }
+      #pageheader a {
+        color: white;
+        text-decoration: none;
+      }
+      /* None header elements */
+      main {
+        padding: 1rem;
+      }
+      p {
+        line-height: 1.5;
+        color: 333;
+      }
+
+      @media screen and (min-width: 650px) {
+        body {
+          background-color: lightseagreen;
+        }
+        #pageheader {
+          position: fixed;
+          top: 0px;
+          left: 0px;
+          right: 0px;
+          /* Flexbox Component */
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        #fblogoheader {
+          /* flexbox component */
+          display: flex;
+          gap: 1rem;
+          align-items: center;
+        }
+        #pageheader ul {
+          flex-direction: row;
+          justify-content: center;
+        }
+        #pageheader nav {
+          min-width: 400px;
+        }
+        #logo {
+          width: 80px;
+          height: 80px;
+        }
+        main {
+          padding-top: 200px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header id="pageheader">
+      <!-- Start the logo and h1 -->
+      <div id="fblogoheader">
+        <img
+          src="Images/paws_logo.png"
+          alt="Paws and Whiskers logo"
+          id="logo"
+        />
+        <h1>Paws and Whiskers</h1>
+      </div>
+      <!-- End the logo and h1 -->
+
+      <!-- Start navigation -->
+
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Our Pets</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+
+      <!-- End navigation -->
+    </header>
+    <main>
+      <h2>Fixed Menu</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, facere
+        molestiae alias sapiente odio assumenda quidem cum debitis vel, maiores
+        possimus rem in corrupti maxime numquam nobis, eius reprehenderit quasi.
+      </p>
+    </main>
+  </body>
+</html>
