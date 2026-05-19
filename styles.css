@@ -54,11 +54,13 @@ body {
 
 #media {
   background-color: #0673fd;
-  min-height: 10rem;
+  /* min-height: 10rem; */
+  height: 80vh;
   padding: 1rem;
   background-image: url(Images/hero.png);
   background-size: cover;
-  aspect-ratio: 16 / 9;
+  /* aspect-ratio: 16 / 9; */
+  background-position: center center;
 }
 
 #logo {
@@ -80,19 +82,46 @@ body {
   background-color: rgb(0, 0, 0);
   min-height: 10rem;
   padding: 1rem;
-  color: #0182a2;
+  color: #0673fd;
+  line-height: 1.5;
 }
 
 #semester1 {
   background-color: #16fbff;
   min-height: 10rem;
   padding: 1rem;
+  color: #1ccaf7;
 }
 
 #semester2 {
   background-color: #1ccaf7;
   min-height: 10rem;
   padding: 1rem;
+  color: #1ccaf7;
+}
+#worksamples {
+  background-color: #61dfff;
+  min-height: 10rem;
+  padding: 1rem;
+  color: #1ccaf7;
+}
+#worksamples ul {
+  list-style-type: none;
+}
+#worksamples i {
+  color: #2ba3ff;
+}
+#certificates {
+  background-color: #61b3ff;
+  min-height: 10rem;
+  padding: 1rem;
+  color: #1ccaf7;
+}
+#certificates ul {
+  list-style-type: none;
+}
+#certificates i {
+  color: #0fa7ff;
 }
 
 #pagefooter {
@@ -110,7 +139,7 @@ body {
   padding: 1rem;
   min-height: auto;
 }
-#aifooter.container {
+#aifooter .container {
   text-align: center;
   min-height: auto;
 }
@@ -119,6 +148,10 @@ body {
   min-height: 10rem;
   padding: 1rem;
   text-align: center;
+}
+li a {
+  color: #1ccaf7;
+  text-decoration: none;
 }
 
 audio {
